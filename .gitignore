@@ -1,0 +1,16 @@
+# Зависимости
+node_modules/
+
+# Сборка
+dist/
+
+# Рабочая папка агента (локальная, не для репозитория)
+.opencode/
+
+# Разное
+*.log
+*.local
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
