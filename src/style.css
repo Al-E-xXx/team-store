@@ -66,14 +66,28 @@
   --radius-normal: 8px;
   --radius-big: 12px;
 }
-
-button, input {
-  border-radius: var(--radius-normal);
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: var(--font-family-base),sans-serif;
-  margin: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button, input {
+  font: inherit;
+  border-radius: var(--radius-normal);
+}
+
+img {
+  object-fit: fill;
+  max-width: 100%;
+  display: block;
 }
