@@ -1,19 +1,93 @@
-/* Временные стили каркаса. Полная дизайн-система — задача #3. */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Medium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-SemiBold.woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Bold.woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+:root{
+  --white: #ffffff;
+  --white-bg: #F2F3F5;
 
-:root {
-  --color-bg: #ffffff;
-  --color-text: #1f2430;
-  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-primary:#1F2328;
+  --text-secondary:#5F6670;
+  --text-tertiary:#8A9099;
+
+  --light-gray: #E2E4E8;
+  --green:#1A7F37;
+  --blue: #1D5BD8;
+  --light-blue:#E8EFFC;
+  --orange: #F25C27;
+
+  --bg-primary: var(--white-bg);
+  --bg-card: var(--white);
+  --bg-header: var(--white);
+  --bg-footer: var(--white);
+
+  --text-button-primary: var(--white);
+  --text-button-secondary: var(--blue);
+  --text-button-tertiary: var(--text-primary);
+
+  --bg-button-primary: var(--blue);
+  --bg-button-secondary: var(--light-blue);
+  --bg-button-tertiary: var(--white) ;
+
+  --border-button-tertiary: var(--light-gray);
+
+  --bg-logo: var(--blue);
+
+  --font-family-base: "Montserrat",system-ui,sans-serif;
+  --font-size-badge: 12px;
+  --font-size-params: 13px;
+  --font-size-smallbody: 14px;
+  --font-size-body: 15px;
+  --font-size-naming: 17px;
+  --font-size-h2: 18px;
+  --font-size-desktopprice: 24px;
+  --font-size-h1: 32px;
+
+  --radius-normal: 8px;
+  --radius-big: 12px;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  color: var(--color-text);
-  background: var(--color-bg);
+  font-family: var(--font-family-base),sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
-#app {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1rem;
+[hidden] {
+  display: none !important;
+}
+
+button, input {
+  font: inherit;
+  border-radius: var(--radius-normal);
+}
+
+img {
+  object-fit: fill;
+  max-width: 100%;
+  display: block;
 }
