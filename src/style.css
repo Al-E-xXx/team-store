@@ -51,6 +51,8 @@
 
   --border-button-tertiary: var(--light-gray);
 
+  --border-field: var(--text-tertiary);
+
   --bg-logo: var(--blue);
 
   --font-family-base: "Montserrat",system-ui,sans-serif;
@@ -90,4 +92,22 @@ img {
   object-fit: fill;
   max-width: 100%;
   display: block;
+}
+
+.field{
+  background-color: var(--white);
+  padding: 10px 12px;
+  color: var(--text-primary);
+  border: 1px solid var(--border-field);
+  border-radius: var(--radius-normal);
+  font-size: var(--font-size-body);
+}
+
+.field::placeholder {
+  color: var(--text-tertiary);
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--blue);
 }
