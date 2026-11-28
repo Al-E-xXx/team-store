@@ -205,3 +205,23 @@ button {
   color: var(--text-primary);
   background: transparent;
 }
+
+.sort{
+  display: flex;
+  font-size: var(--font-size-body);
+  gap: 6px;
+  align-items: center;
+}
+
+.sort__label{
+  color:var(--text-secondary);
+}
+
+.sort__toggle{
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+}
