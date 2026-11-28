@@ -119,6 +119,7 @@ button {
   background-color: var(--bg-button-tertiary);
   color: var(--text-button-tertiary);
   border-color: var(--border-button-tertiary);
+}
 .field{
   background-color: var(--white);
   padding: 10px 12px;
