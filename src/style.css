@@ -52,8 +52,6 @@
   --border-button-tertiary: var(--light-gray);
   --border-field: var(--text-primary);
 
-  --border-field: var(--text-tertiary);
-
   --bg-logo: var(--blue);
 
   --font-family-base: "Montserrat",system-ui,sans-serif;
