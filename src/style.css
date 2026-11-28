@@ -176,3 +176,32 @@ button {
   color: var(--text-button-tertiary);
   border-color: var(--border-button-tertiary);
 }
+
+.quantity{
+  display: flex;
+  width: max-content;
+  border: 1px solid var(--border-field);
+  border-radius: var(--radius-normal);
+  align-items: center;
+}
+
+.quantity__value{
+  display: flex;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+}
+
+.quantity__button{
+  display: flex;
+  height: 36px;
+  width: 36px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  background: transparent;
+}
